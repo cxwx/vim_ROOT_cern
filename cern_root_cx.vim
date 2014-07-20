@@ -2,7 +2,7 @@
 " =====================================================
 " updated by Chen Xu
 " email: chenxu@mail.ustc.edu.cn
-" copyright cx
+" copyright see the LICENSE 
 " Last modify:Fri, 11 Jul 2014 14:52:56 +0800
 " =====================================================
 " cp % ${HOME}/.vim/after/syntax
@@ -20,34 +20,53 @@
 set c_no_cern_root
 
 if !exists("c_no_cern_root")
-   syn keyword	cType		TH1 TH1C TH1D TH1F TH1I TH1K TH1S 
-   syn keyword	cType		TH2 TH2C TH2D TH2F TH2I TH2S
-   syn keyword	cType		TH3 TH3C TH3D TH3F TH3I TH3S
-   syn keyword	cType		TF1 TF2 TF3
-   syn keyword	cType		THStack TGraph TGraph2D TCanvas TRandom TLimit TLatex TGraphErrors
-   syn keyword	cType		TNtuple TObject TTree TIter TKey TRandom2 TShape TPad TMacro
-   syn keyword	cType           TString TLine TLegend TFile TDatime TRandom3 TMath
-   syn keyword	cType           TLeaf TLeafB TLeafC TLeafD TLeafElement TLeafF TLeafI TLeafL TLeafO TLeafObject
-   syn keyword	cType           TChain TDirectory TList TArc TBox TEllipse TPolyLine TCurlyLine TCurlyArc TEllipse
-   syn keyword	cType           TMinuit TFitter TLinearFitter TLorentzVector TLorentzRotation TVector3 TVector2
-   syn keyword	cType           TRotation TGenPhaseSpace TFeldmanCousins TRobustEstimator TRolke TQuaternion
-   syn keyword	cType           TPostScript TSVG TPDF TImageDump THtml TColor TStyle TComplex TPRegexp
-   syn keyword	cType           TObjArrayIter TMapIter TClass TEnv TGlobal TCint TROOT TDictionary TTime TTimer
-   syn keyword	cType           Double_t Int_t Float_t Long_t Bool_t Byte_t
-   syn keyword	cType      	char_t Marker_t Double32_t Float16_t Long64_t
-   syn keyword	cType           Short_t Stat_t Style_t Text_t UShort_t  
-   syn keyword	cConstant       kRed kPink kBlue kMagenta kViolet kAzure kCyan kTeal kGreen kSpring kYellow kBlack
-   syn keyword	cConstant       kSolid kDashed kDotted kDashDotted kDot kPlus kStar kCircle kMultiply kFullDotSmall
-   syn keyword	cConstant       kFullDotMedium kFullDotLarge kOpenTriangleDown kFullCross kFullCircle kFullSquare
-   syn keyword	cConstant       kFullTriangleUp kFullTriangleDown kOpenCircle kOpenSquare kOpenTriangleUp 
-   syn keyword	cConstant       kOpenDiamond kOpenCross kFullStar kOpenStar
-   syn keyword	cConstant       kTRUE kFALSE 
-   syn keyword	cConstant       kIsClass kIsStruct kIsUnion kIsEnum kIsNamespace kIsTypedef kIsFundamental 
-   syn keyword	cConstant       kIsAbstract kIsVirtual kIsPureVirtual kIsPublic kIsProtected kIsPrivate kIsPointer 
-   syn keyword	cConstant       kIsArray kIsStatic kIsDefault kIsReference kIsConstant kIsConstPointer kIsMethConst
-   syn keyword	cSpecial        gGeometry gHistImagePalette gWebImagePalette gGrid gClassTable gObjectTable
-   syn keyword	cSpecial        gProof gPerfStats gTQSender gTQSlotParams gDebug gDirectory gROOT gFile gPad 
-   syn keyword	cSpecial        gApplication gBenchmark gEnv gErrorIgnoreLevel gErrorAbortLevel gRandom gStyle
-   syn keyword	cSpecial        gRootDir gProgName gProgPath gSystem gVirtualPS gDragManager gGuiBuilder gCurrentRegion
-   syn keyword	cSpecial        gClient gMinuit gHtml
+   syn keyword cType    TH1 TH1C TH1D TH1F TH1I TH1K TH1S 
+   syn keyword cType    TH2 TH2C TH2D TH2F TH2I TH2S
+   syn keyword cType    TH3 TH3C TH3D TH3F TH3I TH3S
+   syn keyword cType    TF1 TF2 TF3
+   syn keyword cType    TGraph TGraph2D TGraphErrors 
+   syn keyword cType    TRandom TRandom2 TRandom3
+   syn keyword cType    TCanvas TPad TLegend
+   syn keyword cType    THStack TLimit TLatex 
+   syn keyword cType    TDictionary TFile TTROOT Object TClass 
+   syn keyword cType    TChain TNtuple TTree 
+   syn keyword cType    TMacro TEnv TGlobal TCint
+   syn keyword cType    TIter TKey TShape 
+   syn keyword cType    TMath
+   syn keyword cType    TDatime 
+   syn keyword cType    TColor TStyle 
+   syn keyword cType    TLine TBox TEllipse TPolyLine TCurlyLine TCurlyArc TEllipse
+   syn keyword cType    TString 
+   syn keyword cType    TLeaf TLeafB TLeafC TLeafD TLeafElement TLeafF TLeafI TLeafL TLeafO TLeafObject
+   syn keyword cType    TList TArc 
+   syn keyword cType    TMinuit TFitter TLinearFitter 
+   syn keyword cType    TLorentzVector TLorentzRotation 
+   syn keyword cType    TDirectory 
+   syn keyword cType    TVector3 TVector2
+   syn keyword cType    TRotation 
+   syn keyword cType    TGenPhaseSpace TFeldmanCousins TRobustEstimator TRolke TQuaternion
+   syn keyword cType    TPostScript TSVG TPDF TImageDump THtml TComplex TPRegexp
+   syn keyword cType    TObjArrayIter TMapIter 
+   syn keyword cType    TTime TTimer
+   syn keyword cType    Double_t Int_t Float_t Long_t Bool_t Byte_t char_t Short_t UShort_t  
+   syn keyword cType    Marker_t 
+   syn keyword cType    Stat_t Style_t Text_t 
+
+   syn keyword cConstant       kRed kPink kBlue kMagenta kViolet kAzure kCyan kTeal kGreen kSpring kYellow kBlack
+   syn keyword cConstant       kSolid kDashed kDotted kDashDotted kDot kPlus kStar kCircle kMultiply kFullDotSmall
+   syn keyword cConstant       kFullDotMedium kFullDotLarge kOpenTriangleDown kFullCross kFullCircle kFullSquare
+   syn keyword cConstant       kFullTriangleUp kFullTriangleDown kOpenCircle kOpenSquare kOpenTriangleUp 
+   syn keyword cConstant       kOpenDiamond kOpenCross kFullStar kOpenStar
+   syn keyword cConstant       kTRUE kFALSE 
+   syn keyword cConstant       kIsClass kIsStruct kIsUnion kIsEnum kIsNamespace kIsTypedef kIsFundamental 
+   syn keyword cConstant       kIsAbstract kIsVirtual kIsPureVirtual kIsPublic kIsProtected kIsPrivate kIsPointer 
+   syn keyword cConstant       kIsArray kIsStatic kIsDefault kIsReference kIsConstant kIsConstPointer kIsMethConst
+
+   syn keyword cSpecial        gGeometry gHistImagePalette gWebImagePalette gGrid gClassTable gObjectTable
+   syn keyword cSpecial        gProof gPerfStats gTQSender gTQSlotParams gDebug gDirectory gROOT gFile gPad 
+   syn keyword cSpecial        gApplication gBenchmark gEnv gErrorIgnoreLevel gErrorAbortLevel
+   syn keyword cSpecial        gRandom
+   syn keyword cSpecial        gStyle
+   syn keyword cSpecial        gRootDir gProgName gProgPath gSystem gVirtualPS gDragManager gGuiBuilder gCurrentRegion
+   syn keyword cSpecial        gClient gMinuit gHtml
 endif
